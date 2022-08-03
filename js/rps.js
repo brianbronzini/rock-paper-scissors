@@ -11,17 +11,24 @@ function getComputerChoice() {
 function game() {
   // Initialize score counters for function scope
   let playerScore, computerScore;
+  let round = 1;
 
-  for (let round = 1; round <= 5; round++) {
+  while (round <= 5) {
     const playerSelection = prompt('Please choose (Rock, Paper, or Scissors): ').toUpperCase();
     const computerSelection = getComputerChoice();
     playRound(playerSelection, computerSelection);
+    round++;
+  }
+
+  function tie() {
+    round--;
+    console.log('Tie! Go Again!');
   }
 
   // Set all possible win/loss/tie conditions and increment the counters
   function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
-      console.log('Tie! Go again!');
+      tie();
     }
     else if (
       (playerSelection === "ROCK" && computerSelection === "SCISSORS") ||
