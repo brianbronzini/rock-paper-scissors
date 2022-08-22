@@ -1,11 +1,24 @@
+// Get computer's choice for each round
+function getComputerChoice() {
+  let arr = ["ROCK", "PAPER", "SCISSORS"];
+  let i = Math.floor(Math.random() * 3);
+  let cpuChoice = arr[i];
+  
+  return cpuChoice;
+}
+
 // Loop through 5 rounds and get choices from the computer/player
 function game() {
   // Initialize game counters
   let playerScore = 0, computerScore = 0, round = 1;
 
+  const roundOutcome = document.querySelector('#round-outcome p');
+  const playerBtn = document.querySelectorAll('div.player-btn button');
+  const cpuPoint = document.querySelector('.comp-score');
+  const playerPoint = document.querySelector('.player-score');
+
   // Get player's choice for each round
   function getPlayerChoice() {
-    const playerBtn = document.querySelectorAll('div.player-btn button');
     playerBtn.forEach((button) => {
       button.addEventListener('click', (e) => {
         let playerSelection = e.target.value;
@@ -14,14 +27,11 @@ function game() {
     });
   }
   getPlayerChoice();
-  
-  // const playerCurrPoints = document.getElementById("player-score");
-  // const computerCurrPoints = document.getElementById("player-score");
 
   // Handles tie condition
   function tie() {
+    roundOutcome.textContent = `Tie! Go Again!`;
     round--;
-    console.log('Tie! Go Again!');
   }
 
   // Set all possible win/loss/tie conditions and increment the counters
@@ -36,18 +46,20 @@ function game() {
         (playerSelection === "SCISSORS" && computerSelection === "PAPER")
       ) {
           playerScore++;
-          console.log(`You win this round! ${playerSelection} beats ${computerSelection}`);
+          playerPoint.textContent = playerScore;
+          roundOutcome.textContent = (`You win round ${round}! ${playerSelection} beats ${computerSelection}`);
       }
       else {
         computerScore++;
-        console.log(`Computer wins this round.. ${computerSelection} beats ${playerSelection}`);
+        cpuPoint.textContent = computerScore;
+        roundOutcome.textContent = (`Computer wins round ${round}.. ${computerSelection} beats ${playerSelection}`);
       }
       round++;
     }
-    if (playerScore === 3) {
+    if (playerScore >= 3) {
       alert('YOU WIN! :D');
     }
-    else if (computerScore === 3) {
+    else if (computerScore >= 3) {
       alert('YOU LOSE! D:');
     }
   }
@@ -55,12 +67,3 @@ function game() {
 
 // Run the game
 game();
-
-// Get computer's choice for each round
-function getComputerChoice() {
-  let arr = ["ROCK", "PAPER", "SCISSORS"];
-  let i = Math.floor(Math.random() * 3);
-  let cpuChoice = arr[i];
-  
-  return cpuChoice;
-}
