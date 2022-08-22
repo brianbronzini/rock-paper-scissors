@@ -6,30 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css" type="text/css">
   <title>Rock, Paper, Scissors!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/rps.js" defer></script>
 </head>
   <body>
-    <div class="flex">
-      <h1>Rock Paper Scissors</h1>
+    
+    <main id="main" role="main">
+      <h1>Rock, Paper, Scissors!</h1>
 
-      <section class="scorecard">
-        <div id="player-card">
-          <div id="player-score">0</div>
-          <p>You</p>
-        </div>
+        <div class="container1">
+          <div class="scorecard">
+            <div id="player-card">
+              <div class="player-score points">0</div>
+              <p>You</p>
+            </div>
 
-        <div id="comp-card">
-          <div id="comp-score">0</div>
-          <p>Computer</p>
+            <div id="comp-card">
+              <div class="comp-score points">0</div>
+              <p>Computer</p>
+            </div>
+          </div>
         </div>
-      </section>
+    
 
       <div class="player-btn">
-        <button type="button" value="ROCK">Rock</button>
-        <button type="button" value="PAPER">Paper</button>
-        <button type="button" value="SCISSORS">Scissors</button>
+        <button class="bounce" type="button" value="ROCK" style="animation-delay: 0.07s">Rock</button>
+        <button class="bounce" type="button" value="PAPER" style="animation-delay: 0.14s">Paper</button>
+        <button class="bounce" type="button" value="SCISSORS" style="animation-delay: 0.21s">Scissors</button>
       </div>
 
-    </div>
+      <div id="round-outcome">
+        <p></p>
+      </div>
+
+    </main>
+    
   </body>
 </html>
