@@ -16,6 +16,9 @@ function game() {
   const playerBtn = document.querySelectorAll('div.player-btn button');
   const cpuPoint = document.querySelector('.comp-score');
   const playerPoint = document.querySelector('.player-score');
+  const footerYear = document.querySelector('footer span');
+
+  footerYear.textContent = new Date().getFullYear();
 
   // Get player's choice for each round
   function getPlayerChoice() {

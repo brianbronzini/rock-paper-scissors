@@ -33,22 +33,44 @@ div.player-btn, div.scorecard {
 button {
   display: inline-block;
   padding: 0.35em 1.2em;
-  border: 0.1em solid #FFFFFF;
+  border: 0.1em solid #FFF;
   margin: 0 0.5em;
   height: 50px;
   width: 100px;
   border-radius: 0.12em;
-  box-sizing: border-box;
   text-decoration: none;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #FFF;
   text-align: center;
   transition: all 0.2s;
 }
 
 button:hover{
-  color: #000000;
-  background-color: #FFFFFF;
+  color: #000;
+  background-color: #FFF;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+  font-size: 20px; 
+}
+
+.fa-github {
+  height: auto;
+  padding: 0 0 0 8px;
+  color: white;
+  transition: background-color .5s;
 }
 
 .bounce {
