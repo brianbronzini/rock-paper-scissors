@@ -17,6 +17,8 @@ function game() {
   const endText = document.querySelector('#end-text');
   const endAlert = document.querySelector('#end-alert');
   const resetBtn = document.querySelector('#reset-btn');
+  const credit = document.querySelector('#credit');
+  const bender = document.querySelector('#page');
   const footerYear = document.querySelector('footer span');
 
   footerYear.textContent = new Date().getFullYear();
@@ -72,16 +74,20 @@ function game() {
     }
     else {
       endText.textContent = 'LOSER!';
+      credit.classList.remove('disappear');
+      bender.classList.remove('disappear');
     }
   }
 
   function endGame() {
     main.classList.add('disappear');
     endAlert.classList.remove('disappear');
-
+    
     resetBtn.addEventListener('click', () => {
       main.classList.remove('disappear');
       endAlert.classList.add('disappear');
+      credit.classList.add('disappear');
+      bender.classList.add('disappear');
       restartGame();
     });
   }
