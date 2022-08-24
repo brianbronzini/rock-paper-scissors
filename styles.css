@@ -26,15 +26,19 @@ div.scorecard {
   gap: 10%;
 }
 
-div.player-btn, div.scorecard {
+div.scorecard {
   padding-bottom: 25px;
+}
+
+div#round-outcome p {
+  margin-top: 25px;
 }
 
 button {
   display: inline-block;
   padding: 0.35em 1.2em;
   border: 0.1em solid #FFF;
-  margin: 0 0.5em;
+  margin: 0.5em;
   height: 50px;
   width: 100px;
   border-radius: 0.12em;
@@ -48,6 +52,23 @@ button {
 button:hover{
   color: #000;
   background-color: #FFF;
+}
+
+#end-alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#end-text {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+#end-alert.disappear,
+.disappear {
+  display: none;
 }
 
 footer {
@@ -70,9 +91,15 @@ a {
   height: auto;
   padding: 0 0 0 8px;
   color: white;
-  transition: background-color .5s;
+  transition: transform 0.3s ease-in-out;
 }
 
+.fa-github:hover {
+  transform: scale(1.2);
+  color: aquamarine;
+}
+
+/* ANIMATIONS */
 .bounce {
   animation: bounce 5s infinite linear;
   position:relative;
@@ -88,9 +115,23 @@ a {
   100%{top:0em;}
 }
 
+.btn1 {
+  animation-delay: 0.07s
+}
+
+.btn2 {
+  animation-delay: 0.14s
+}
+
+.btn3 {
+  animation-delay: 0.21s
+}
+
+/* MEDIA QUERIES */
 @media all and (max-width:30em){
-  button{
-    display:block;
-    margin:0.4em auto;
+  button,
+  #round-outcome p {
+    display: block;
+    margin: 1em auto;
   }
 }

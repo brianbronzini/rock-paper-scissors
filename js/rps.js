@@ -1,10 +1,7 @@
 // Get computer's choice for each round
 function getComputerChoice() {
   let arr = ["ROCK", "PAPER", "SCISSORS"];
-  let i = Math.floor(Math.random() * 3);
-  let cpuChoice = arr[i];
-  
-  return cpuChoice;
+  return arr[Math.floor(Math.random() * arr.length)];
 }
 
 // Loop through 5 rounds and get choices from the computer/player
@@ -12,10 +9,14 @@ function game() {
   // Initialize game counters
   let playerScore = 0, computerScore = 0, round = 1;
 
-  const roundOutcome = document.querySelector('#round-outcome p');
-  const playerBtn = document.querySelectorAll('div.player-btn button');
-  const cpuPoint = document.querySelector('.comp-score');
+  const main = document.querySelector('main');
   const playerPoint = document.querySelector('.player-score');
+  const cpuPoint = document.querySelector('.comp-score');
+  const playerBtn = document.querySelectorAll('div.player-btn button');
+  const roundOutcome = document.querySelector('#round-outcome p');
+  const endText = document.querySelector('#end-text');
+  const endAlert = document.querySelector('#end-alert');
+  const resetBtn = document.querySelector('#reset-btn');
   const footerYear = document.querySelector('footer span');
 
   footerYear.textContent = new Date().getFullYear();
@@ -26,9 +27,12 @@ function game() {
       button.addEventListener('click', (e) => {
         let playerSelection = e.target.value;
         playRound(playerSelection, getComputerChoice());
+        if (playerScore === 5 || computerScore === 5) {
+          findWinner();
+        }
       });
     });
-  }
+  };
   getPlayerChoice();
 
   // Handles tie condition
@@ -39,7 +43,7 @@ function game() {
 
   // Set all possible win/loss/tie conditions and increment the counters
   function playRound(playerSelection, computerSelection) {
-    if (round <= 5) {
+    if (round <= 10) {
       if (playerSelection === computerSelection) {
         tie();
       }
@@ -59,12 +63,36 @@ function game() {
       }
       round++;
     }
-    if (playerScore >= 3) {
-      alert('YOU WIN! :D');
+  }
+
+  function findWinner() {
+    endGame();
+    if (playerScore > computerScore) {
+      endText.textContent = 'WINNER!';
     }
-    else if (computerScore >= 3) {
-      alert('YOU LOSE! D:');
+    else {
+      endText.textContent = 'LOSER!';
     }
+  }
+
+  function endGame() {
+    main.classList.add('disappear');
+    endAlert.classList.remove('disappear');
+
+    resetBtn.addEventListener('click', () => {
+      main.classList.remove('disappear');
+      endAlert.classList.add('disappear');
+      restartGame();
+    });
+  }
+
+  function restartGame() {
+    playerScore = 0;
+    computerScore = 0;
+    round = 1;
+    playerPoint.textContent = 0;
+    cpuPoint.textContent = 0;
+    roundOutcome.textContent = '';
   }
 }
 
