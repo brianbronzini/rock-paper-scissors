@@ -71,9 +71,11 @@ function game() {
     endGame();
     if (playerScore > computerScore) {
       endText.textContent = 'WINNER!';
+      endAlert.classList.add('win-sp');
     }
     else {
       endText.textContent = 'LOSER!';
+      endAlert.classList.add('loss-sp');
       credit.classList.remove('disappear');
       bender.classList.remove('disappear');
     }
@@ -85,6 +87,8 @@ function game() {
     
     resetBtn.addEventListener('click', () => {
       main.classList.remove('disappear');
+      endAlert.classList.remove('win-sp');
+      endAlert.classList.remove('loss-sp');
       endAlert.classList.add('disappear');
       credit.classList.add('disappear');
       bender.classList.add('disappear');
