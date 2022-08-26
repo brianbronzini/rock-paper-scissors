@@ -13,7 +13,7 @@ A simple webpage that allows you to play [Rock Paper Scissors](https://rock-pape
 
 - Select one of the 3 buttons labeled as: "Rock", "Paper", and "Scissors".
 - Upon your selection, the computer will return a random response from the 3 options.
-- The program will then compare your response with the cumputer's and determin a winner.
+- The program will then compare your response with the computer's and determine a winner.
 - The first player to earn 5 points wins the game!
 
 ### Learning Outcomes
@@ -21,6 +21,6 @@ A simple webpage that allows you to play [Rock Paper Scissors](https://rock-pape
 - Manipulating the Document Object Model (DOM).
 - Function scope and the importance of closures in JavaScript.
 - Mobile-First Responsive Web Design
-- How to iterate through an aray and select a random value.
+- How to iterate through an array and select a random value.
 - How to create simple animations with CSS.
 - How to use and style [Font Awesome Icons](https://fontawesome.com/).
