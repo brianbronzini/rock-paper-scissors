@@ -6,6 +6,9 @@
 
 A simple webpage that allows you to play [Rock Paper Scissors](https://rock-paper-scissors.brianveebee.repl.co/) against the computer in your browser!
 
+### Preview
+![](https://user-images.githubusercontent.com/80178792/186989728-3c9b12f6-9f94-4da0-93a3-2f1e9d8d0bba.gif)
+
 ### Usage Instructions
 
 - Select one of the 3 buttons labeled as: "Rock", "Paper", and "Scissors".
@@ -21,6 +24,3 @@ A simple webpage that allows you to play [Rock Paper Scissors](https://rock-pape
 - How to iterate through an aray and select a random value.
 - How to create simple animations with CSS.
 - How to use and style [Font Awesome Icons](https://fontawesome.com/).
-
-### Preview
-[rock-paper-scissors-demo](https://user-images.githubusercontent.com/80178792/186989728-3c9b12f6-9f94-4da0-93a3-2f1e9d8d0bba.gif)
