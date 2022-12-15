@@ -1,10 +1,10 @@
-# The Odin Project - Foundations of Web Development
+# CS50 Final Project - Rock, Paper, Scissors!
 
 :star: If you like this project, give me a star on GitHub to show some support! :D
 
-## Project: Rock Paper Scissors
+## Objective: Beat the computer!
 
-A simple webpage that allows you to play [Rock Paper Scissors](https://rock-paper-scissors.brianveebee.repl.co/) against the computer in your browser!
+A simple webpage that allows you to play [Rock Paper Scissors](https://rock-paper-scissors.brianveebee.repl.co/) against the computer in your browser.
 
 ### Preview
 ![](https://user-images.githubusercontent.com/80178792/186989728-3c9b12f6-9f94-4da0-93a3-2f1e9d8d0bba.gif)
