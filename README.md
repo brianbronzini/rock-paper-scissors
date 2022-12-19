@@ -13,7 +13,7 @@ A simple webpage that allows you to play [Rock Paper Scissors](https://rock-pape
 
 - Select one of the 3 buttons labeled as: "Rock", "Paper", and "Scissors".
 - Upon your selection, the computer will return a random response from the 3 options.
-- The program will then compare your response with the computer's and determine a winner.
+- The program will then compare your response with the computer's and determine a winner for each round.
 - The first player to earn 5 points wins the game!
 
 ### Learning Outcomes
