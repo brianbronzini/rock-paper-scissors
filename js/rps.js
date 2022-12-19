@@ -78,6 +78,7 @@ function game() {
     else {
       endText.textContent = 'LOSER!';
       endAlert.classList.add('loss-sp');
+      cs50.classList.add('disappear');
       credit.classList.remove('disappear');
       bender.classList.remove('disappear');
     }
@@ -91,6 +92,7 @@ function game() {
       main.classList.remove('disappear');
       endAlert.classList.remove('win-sp');
       endAlert.classList.remove('loss-sp');
+      cs50.classList.remove('disappear');
       endAlert.classList.add('disappear');
       credit.classList.add('disappear');
       bender.classList.add('disappear');
