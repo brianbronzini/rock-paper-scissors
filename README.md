@@ -1,8 +1,8 @@
 # CS50 Final Project - Rock, Paper, Scissors!
 
-:star: If you like this project, give me a star on GitHub to show some support! :D
+:star: If you like this project, give me a star on GitHub to show some support :D
 
-## Objective: Beat the computer!
+## Objective: Beat the computer
 
 A simple webpage that allows you to play [Rock Paper Scissors](https://rock-paper-scissors.brianveebee.repl.co/) against the computer in your browser.
 
