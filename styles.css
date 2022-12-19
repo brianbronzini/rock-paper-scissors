@@ -82,8 +82,8 @@ button:hover{
 	touch-action: manipulation;
 }
 
-#reset-btn {
-  width: auto;
+#cs50 {
+	
 }
 
 #end-alert {
@@ -104,9 +104,18 @@ button:hover{
   font-size: 70px;
 }
 
+#cs50 {
+	font-size: 50px;
+	padding: 20px;
+}
+
 #end-alert.disappear,
 .disappear {
   display: none;
+}
+
+#reset-btn {
+  width: auto;
 }
 
 #credit {

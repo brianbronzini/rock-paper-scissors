@@ -15,6 +15,7 @@ function game() {
   const playerBtn = document.querySelectorAll('div.player-btn button');
   const roundOutcome = document.querySelector('#round-outcome p');
   const endText = document.querySelector('#end-text');
+  const cs50 = document.querySelector('#cs50');
   const endAlert = document.querySelector('#end-alert');
   const resetBtn = document.querySelector('#reset-btn');
   const credit = document.querySelector('#credit');
@@ -71,6 +72,7 @@ function game() {
     endGame();
     if (playerScore > computerScore) {
       endText.textContent = 'WINNER!';
+      cs50.textContent = 'This was CS50';
       endAlert.classList.add('win-sp');
     }
     else {
