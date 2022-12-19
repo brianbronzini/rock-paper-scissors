@@ -6,6 +6,9 @@
 
 A simple webpage that allows you to play [Rock Paper Scissors](https://rock-paper-scissors.brianveebee.repl.co/) against the computer in your browser.
 
+### Video Demo
+See the live demonstration of the application on [YouTube](https://youtu.be/IF2B3qTtbH8)! 
+
 ### Preview
 ![](https://user-images.githubusercontent.com/80178792/186989728-3c9b12f6-9f94-4da0-93a3-2f1e9d8d0bba.gif)
 
