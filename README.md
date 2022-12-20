@@ -1,25 +1,42 @@
 # CS50 Final Project - Rock, Paper, Scissors!
 
 :star: If you like this project, give me a star on GitHub to show some support :D
+[![last commit](https://img.shields.io/github/last-commit/brianveebee/rock-paper-scissors)]
 
-## Objective: Beat the computer
-
-A simple webpage that allows you to play [Rock Paper Scissors](https://rock-paper-scissors.brianveebee.repl.co/) against the computer in your browser.
-
-### Video Demo
-See the live demonstration of the application on [YouTube](https://youtu.be/IF2B3qTtbH8)! 
-
-### Preview
+## Preview
 ![](https://user-images.githubusercontent.com/80178792/186989728-3c9b12f6-9f94-4da0-93a3-2f1e9d8d0bba.gif)
 
-### Usage Instructions
+## Application Description
+A simple webpage that allows you to play Rock-Paper-Scissors against the computer in your browser.
+
+## Table of Contents
+
+* [Demo](#demo)
+* [Tech Stack](#tech-stack)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Learning Outcomes](#learning-outcomes)
+* [Contact Information](#contact-information)
+
+## Demo
+Watch a video demonstration of the application on [YouTube](https://youtu.be/IF2B3qTtbH8)
+Try it out yourself on the [live site](https://rock-paper-scissors.brianveebee.repl.co/)
+
+## Technology Stack
+| Technology | Description                               | Badge ↘️ |
+|------------|-------------------------------------------|--------|
+| HTML5      | Hyper Text Markup Language                | ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) |
+| CSS3       | Cascading Style Sheets                    | ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)   |
+| JavaScript | High Level, Dynamic, Interpreted Language | ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) |
+
+## Usage
 
 - Select one of the 3 buttons labeled as: "Rock", "Paper", and "Scissors".
 - Upon your selection, the computer will return a random response from the 3 options.
 - The program will then compare your response with the computer's and determine a winner for each round.
 - The first player to earn 5 points wins the game!
 
-### Learning Outcomes
+## Learning Outcomes
 
 - Manipulating the Document Object Model (DOM).
 - Function scope and the importance of closures in JavaScript.
