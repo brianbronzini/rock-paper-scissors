@@ -37,16 +37,16 @@ Try it out yourself on the [live site](https://rock-paper-scissors.brianveebee.r
 ## Local Installation
 
 **Follow these steps**
-1. Navigate to the [home page](https://github.com/brianveebee/rock-paper-scissors) of this project's repsitory
+1. Navigate to the [homepage](https://github.com/brianveebee/rock-paper-scissors) of this project's repository
 2. Select the drop-down arrow within the green "Code" button and download the .zip source files
 3. Save and extract all files to the desired directory on your local machine
-4. Open the parent folder in you text editor/IDE to browse and make changes to any of the code
-5. Run the index.html file either manually in your web browser or via the live server extension in VS Code to view its output
+4. Open the parent folder in your text editor/IDE to browse and make changes to any of the code
+5. Run the index.html file manually in your web browser or via the live server extension in VS Code to view its output
 6. Happy coding!
 
 ## Usage
 
-* Select one of the 3 buttons labeled as: "Rock", "Paper", and "Scissors"
+* Select one of the 3 buttons labeled: "Rock", "Paper", and "Scissors"
 * Upon your selection, the computer will return a random response from the 3 options
 * The program will then compare your response with the computer's and determine a winner for each round
 * The first player to earn 5 points wins the game
