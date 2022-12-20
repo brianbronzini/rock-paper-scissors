@@ -20,7 +20,6 @@ A simple webpage that allows you to play Rock-Paper-Scissors against the compute
 * [Local Installation](#local-installation)
 * [Usage](#usage)
 * [Learning Outcomes](#learning-outcomes)
-* [Contact Information](#contact-information)
 
 ## Demo
 
@@ -37,6 +36,7 @@ Try it out yourself on the [live site](https://rock-paper-scissors.brianveebee.r
 
 ## Local Installation
 
+**Follow these steps**
 1. Navigate to the [home page](https://github.com/brianveebee/rock-paper-scissors) of this project's repsitory
 2. Select the drop-down arrow within the green "Code" button and download the .zip source files
 3. Save and extract all files to the desired directory on your local machine
@@ -59,5 +59,3 @@ Try it out yourself on the [live site](https://rock-paper-scissors.brianveebee.r
 * How to iterate through an array and select a random value
 * How to create simple animations with CSS
 * How to use and style [Font Awesome Icons](https://fontawesome.com/)
-
-## Contact Information
