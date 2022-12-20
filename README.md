@@ -1,8 +1,9 @@
 # CS50 Final Project - Rock, Paper, Scissors!
 
-:star: If you like this project, give me a star on GitHub to show some support :D <br>
-![last commit](https://img.shields.io/github/last-commit/brianveebee/rock-paper-scissors)
-![size](https://img.shields.io/github/languages/code-size/brianveebee/rock-paper-scissors)
+![Last Commit](https://img.shields.io/github/last-commit/brianveebee/rock-paper-scissors)
+![Total Size](https://img.shields.io/github/languages/code-size/brianveebee/rock-paper-scissors)
+
+:star: If you like this project, give me a star on GitHub to show some support :D
 
 ## Preview
 ![](https://user-images.githubusercontent.com/80178792/186989728-3c9b12f6-9f94-4da0-93a3-2f1e9d8d0bba.gif)
